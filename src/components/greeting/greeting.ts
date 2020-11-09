@@ -1,14 +1,9 @@
 import { css, customElement, html, LitElement, property } from 'lit-element';
+import style from './greeting.style.scss';
 
 @customElement('app-greeting')
 export class Greeting extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      border: 1px solid black;
-      text-align: center;
-    }
-  `;
+  static styles = style({ css });
 
   @property()
   name = 'World';
