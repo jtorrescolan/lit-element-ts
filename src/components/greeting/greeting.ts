@@ -1,9 +1,11 @@
 import { css, customElement, html, LitElement, property } from 'lit-element';
-import style from './greeting.style.scss';
+import style from './greeting.scss';
 
 @customElement('app-greeting')
 export class Greeting extends LitElement {
-  static styles = style({ css });
+  static get styles() {
+    return [style({ css })]; 
+  }
 
   @property()
   name = 'World';

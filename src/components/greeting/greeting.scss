@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  border: 1px solid black;
+  text-align: center;
+  transform: scale(0.5);
+  text-decoration-color: aliceblue;
+  user-select: unset;
+
+  h2 {
+    color: red;
+  }
+}
