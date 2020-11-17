@@ -11,8 +11,7 @@ export default {
   plugins: [
     styles({ 
       mode: 'emit', 
-      modules: true, 
-      use: ['sass'], 
+      use: ['sass'],
       plugins: [autoprefixer()] 
     }),
     litSass(),
